@@ -19,3 +19,12 @@ while True:
     print("5. Search Book")
     print("6. Exit")
     choice = input("Enter choice: ")
+
+     # STUDENT B - Append multiple data entries (mode: a)
+    if choice == "1":
+        book = input("Enter book title: ")
+        with open(file_name, "a") as f:
+            f.write(book + "\n")
+        print("Book added.") #samani
+    
+
