@@ -25,6 +25,18 @@ while True:
         book = input("Enter book title: ")
         with open(file_name, "a") as f:
             f.write(book + "\n")
-        print("Book added.") #samani
+        print("Book added.") 
+
+         # STUDENT C - Read file and print count of lines (mode: r)
+    elif choice == "2":
+        with open(file_name, "r") as f:
+            books = f.readlines()
+        if not books:
+            print("Library is empty.")
+        else:
+            print("\nBooks in Library:")
+            for i, b in enumerate(books, 1):
+                print(f"  {i}. {b.strip()}")
+            print(f"Total books: {len(books)}")
     
 
