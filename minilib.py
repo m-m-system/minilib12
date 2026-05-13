@@ -27,7 +27,7 @@ while True:
             f.write(book + "\n")
         print("Book added.") 
 
-         # STUDENT C - Read file and print count of lines (mode: r)
+         # STUDENT A - Read file and print count of lines (mode: r)
     elif choice == "2":
         with open(file_name, "r") as f:
             books = f.readlines()
